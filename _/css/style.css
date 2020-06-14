@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  /*color: #0d0c22;*/
+  background: #242424;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 19px;
+  line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1256px;
+}
+
+#header {
+  padding: 96px 0 192px 640px;
+}
+
+#header h1 {
+  margin-bottom: 16px;
+}
+
+#header span {
+  color: #9b9b9b;
+  display: block;
+  font-size: 16.889px;
+  line-height: 27px;
+}
+
+#content {
+  position: relative;
+}
+
+#content #nav {
+  list-style: none;
+  /*
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 96px;
+  z-index: 9999;
+  float: left;
+}
+
+#content #nav a {
+  color: #bbb;
+  display: inline-block;
+  margin-bottom: 8px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#content #nav a:hover {
+  text-decoration: underline;
+}
+
+#content #nav a.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+#content #nav a.active:before {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -24px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.section {
+  padding-bottom: 96px;
+}
+
+.section hr {
+  height: 24px;
+  border-bottom: 1px solid rgba(233, 233, 233, 0.05);
+  border-top: 1px solid rgba(233, 233, 233, 0.05);
+}
+
+.section .article {
+  padding-bottom: 96px;
+  padding-left: 320px;
+  position: relative;
+}
+
+.section .article:last-child {
+  padding-bottom: 0;
+}
+
+.section .article h2 {
+  float: left;
+  margin: 0;
+  /*
+  position: -webkit-sticky;
+  position: sticky;
+  top: 96px;
+  */
+}
+
+.section:last-child {
+  padding-bottom: 0;
+}
+
+#content p {
+  margin-top: 0;
+  padding: 0 0 24px 320px;
+}
+
+#main {
+}
+#aside {
+}
+#footer {
+  padding: 192px 0 96px 0;
+}
+
+#footer > div > p > span {
+  display: block;
+}
+
+#footer > div {
+  vertical-align: top;
+}
+
+#footer .bio {
+  display: inline-block;
+  width: 296px;
+}
+
+#footer .bio .copy {
+  color: #9b9b9b;
+}
+
+#footer .contact {
+  display: inline-block;
+  padding-left: 339px;
+  width: 616px;
+}
+
+#grid {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#grid .col {
+  /*background: #fff;*/
+  border-left: 1px solid rgba(233, 233, 233, 0.05);
+  border-right: 1px solid rgba(233, 233, 233, 0.05);
+  margin-right: 24px;
+  width: 294px;
+  height: 100%;
+  float: left;
+}
+
+#grid .col:last-child {
+  margin-right: 0;
+}
+
+/* photos */
+.gallery {
+  margin: 24px 0 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery:-webkit-scrollbar {
+  display: none;
+}
+
+.gallery .photo {
+  display: inline-block;
+  margin: 0 24px 0 0;
+  vertical-align: top;
+  max-height: 420px;
+  width: 616px;
+}
+
+.gallery .photo .img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gallery .photo .img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery .photo:only-of-type {
+  padding-left: 320px;
+}
+
+.gallery .photo:last-child {
+  margin-right: 0;
+}
+
+.gallery .desc {
+  color: #bbb;
+  display: block;
+  font-size: 16.889px;
+  line-height: 25px;
+  margin-top: 8px;
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+a img {
+  border: none;
+}
+
+/* Self-Clear Floats*/
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* MEDIA QUERIES
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+@media all and (orientation: portrait) {
+  /* Style adjustments for portrait mode goes here */
+}
+@media all and (orientation: landscape) {
+  /* Style adjustments for landscape mode goes here */
+}
+@media screen and (max-device-width: 480px) {
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+/* less essential - target the above first */
+@media screen and (max-device-width: 320px) {
+}
+@media screen and (max-device-width: 600px) {
+}
+@media screen and (max-device-width: 768px) {
+}
+@media screen and (max-device-width: 1024px) {
+}
+@media screen and (max-device-width: 1200px) {
+}
