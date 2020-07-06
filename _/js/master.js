@@ -3,17 +3,17 @@ Sticky  Navigation
 http://jsfiddle.net/5n5MA/2/ 
 */
 /*
-var fixmeTop = $("#nav").offset().top;
+var fixmeTop = $("#nav ul").offset().top;
 $(window).scroll(function () {
   var currentScroll = $(window).scrollTop();
   if (currentScroll >= fixmeTop) {
-    $("#nav").css({
+    $("#nav ul").css({
       position: "fixed",
       left: "20px",
       top: "20px",
     });
   } else {
-    $("#nav").css({
+    $("#nav ul").css({
       position: "absolute",
     });
   }
