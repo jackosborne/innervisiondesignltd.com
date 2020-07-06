@@ -352,3 +352,27 @@ input[type="checkbox"]:checked ~ #content {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  #nav .logo {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #nav ul {
+    clear: both;
+    display: block;
+    padding-left: 0;
+    float: none;
+    width: 100%;
+  }
+
+  #nav ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--grey);
+  }
+
+  #nav ul li a {
+    color: #fff;
+  }
+}
