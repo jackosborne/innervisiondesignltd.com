@@ -189,6 +189,12 @@ h1 {
   width: 65.895953757%;
 }
 
+#intro--hello .content h1 span {
+  clear: both;
+  display: block;
+  margin-top: 48px;
+}
+
 /* photos */
 .gallery {
   margin: 0 0 24px 0;
