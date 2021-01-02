@@ -1,2 +1,2 @@
 # innervisiondesignltd.com
-A Unique Cross Over Hospitality Design and Management Practice which specialises in Restaurant and Bar Design.
+InnerVision Design Ltd. A Unique Crossover Hospitality Design and Management Practice Specialising in Restaurant and Bar Design.
