@@ -251,34 +251,24 @@ input[type="checkbox"] {
   display: none;
 }
 
-.lightbox {
-  left: 0;
-  min-height: 100%;
+.lightbox-overlay {
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 1;
-  overflow: auto;
-  z-index: 9998;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: -webkit-transform 0.75s ease-out;
-  transition: transform 0.75s ease-out;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  z-index: 9999;
 }
-
-.lightbox img {
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  left: 50%;
-  max-width: 96%;
-  max-height: 96%;
-  outline: 9999px solid rgba(0, 0, 0, 0.88);
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
 }
 
 input[type="checkbox"]:checked + .lightbox {
